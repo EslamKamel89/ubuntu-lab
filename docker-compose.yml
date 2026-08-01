@@ -1,0 +1,6 @@
+services:
+  ubuntu:
+    build: .
+    container_name: ubuntu-dev-lab
+    stdin_open: true
+    tty: true
