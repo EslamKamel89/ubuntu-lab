@@ -51,7 +51,7 @@ ubuntu-dev-lab/
 Clone the repository.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/EslamKamel89/ubuntu-lab.git
 cd ubuntu-dev-lab
 ```
 
