@@ -1,6 +1,10 @@
 services:
   ubuntu:
-    build: .
+    build:
+      context: .
+      args:
+        USERNAME: eslam
+        USER_PASSWORD: password
     container_name: ubuntu-dev-lab
     stdin_open: true
     tty: true
