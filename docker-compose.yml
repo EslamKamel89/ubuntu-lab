@@ -6,5 +6,8 @@ services:
         USERNAME: eslam
         USER_PASSWORD: password
     container_name: ubuntu-dev-lab
+    hostname: ubuntu-lab
+    volumes:
+      - ./workspace:/home/eslam/workspace
     stdin_open: true
     tty: true
