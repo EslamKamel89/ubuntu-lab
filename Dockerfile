@@ -30,7 +30,7 @@ RUN apt-get update && \
 RUN apt-get update && \
     apt-get install -y \
     openssh-server && \
-    rm -rf var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /run/sshd 
 
@@ -43,6 +43,8 @@ RUN echo "${USERNAME}:${USER_PASSWORD}" | chpasswd
 
 RUN usermod -aG sudo "$USERNAME"
 
-USER $USERNAME
+# USER $USERNAME
 
 WORKDIR /home/$USERNAME
+
+CMD ["/usr/sbin/sshd" , "-D"]
