@@ -9,5 +9,7 @@ services:
     hostname: ubuntu-lab
     volumes:
       - ./workspace:/home/eslam/workspace
+    ports:
+      - "22:22"
     stdin_open: true
     tty: true
