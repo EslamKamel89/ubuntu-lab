@@ -60,3 +60,6 @@ logs/
 !volumes/.gitkeep
 !data/.gitkeep
 !logs/.gitkeep
+.llmignore
+code.txt
+summarize.py
