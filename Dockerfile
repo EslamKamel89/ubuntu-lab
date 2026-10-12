@@ -24,6 +24,8 @@ RUN apt-get update && \
     dnsutils \
     net-tools \
     fish \
+    zip \
+    unzip \
     ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
