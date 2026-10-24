@@ -63,3 +63,4 @@ logs/
 .llmignore
 code.txt
 summarize.py
+workspace/
