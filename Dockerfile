@@ -16,6 +16,7 @@ RUN apt-get update && \
     curl \
     wget \
     vim \
+    nano \
     less \
     tree \
     procps \
